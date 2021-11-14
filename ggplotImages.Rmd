@@ -1,0 +1,37 @@
+---
+title: "ggplot Images"
+author: "Joy-El Talbot"
+date: "11/14/2021"
+output: 
+  html_document:
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+```
+
+## Plotting in ggplot2
+
+Here we will show an example of plotting with the ggplot2 library. First let's
+
+### Define the data
+
+```{r data}
+data <- data.frame(x = 1:10,
+                   y = 10:1)
+summary(data)
+```
+
+### Plot the data
+
+Now we can plot it
+
+```{r ggplot, echo=FALSE}
+ggplot(data) +
+  aes(x = x, y = y) + 
+  geom_point()
+```
+
+All done! :-)
