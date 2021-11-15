@@ -1,16 +1,17 @@
 ---
-title: "ggplot Images"
-author: "Joy-El Talbot"
-date: "11/14/2021"
+title: "title of page in Canvas"
 output: 
-  github_document
+  github_document:
+    fig_width: 8
+    fig_height: 8
+    dev: "png"
+    #html_preview: FALSE
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(ggplot2)
 ```
-# ggplot Images
 
 ## Plotting in ggplot2
 
